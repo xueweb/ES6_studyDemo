@@ -8,11 +8,12 @@
  * @param x
  * @param y
  */
-function log(x, y = 'world') {
-    console.log(x, y);
-}
-log('hello');
-
+var log = require('../log')
+/*function log(x, y = 'world') {
+ console.log(x, y);
+ }
+ log('hello');*/
+log('world', 'hello')
 /**
  * 参数默认值可以与解构赋值的默认值，结合起来使用。
  * @param x
@@ -38,8 +39,49 @@ var x = 1;
  * @param x
  * @param y
  */
-function f(x, y = x) {
-    console.log(y);
-}
+/*
+ function f(x, y = x) {
+ console.log(y);
+ }
 
-f(2) // 2
+ f(2) // 2
+ */
+
+    /*
+     * */
+    console.log('函数的rest参数')
+    function add(...values) {
+        let sum = 0;
+        for (var val of values) {
+            sum += val;
+        }
+        return sum;
+    }
+
+    console.log(add(2, 3, 5))
+    function sortNumbers() {
+        return Array.prototype.slice.call(arguments).sort();
+    }
+
+    const sortNum = (...numbers) => numbers.sort();
+    /*rest 参数中的变量代表一个数组，所以数组特有的方法都可以用于这个变量*/
+    function push(array, ...items) {
+        items.forEach(function (item) {
+            array.push(item)
+        })
+    }
+
+    var a = [55];
+    push(a, 1, 2, 3);
+    console.log(a);
+
+/*扩展运算符...*/
+function apush(array,...items) {
+    array.push(...items)
+}
+var narr=[1,1,1];
+apush(narr,1,2,2);
+log(narr)
+
+
+
