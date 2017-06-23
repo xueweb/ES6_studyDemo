@@ -161,6 +161,6 @@ function copyProperties(target, source) {
 }
 //上面代码的mix函数，可以将多个对象合成为一个类。使用的时候，只要继承这个类即可。
 /*
-class DistributedEdit extends mix(Loggable, Serializable) {
-    // ...
-}*/
+ class DistributedEdit extends mix(Loggable, Serializable) {
+ // ...
+ }*/
