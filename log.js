@@ -1,10 +1,12 @@
 /**
- * Created by Administrator on 2017/6/21 0021.
+ * Created by PhpStorm.
+ * User: Helti
+ * Date: 2017/8/12
+ * Time: 17:28
  */
 
-
-module.exports=function (...args) {
+module.exports = function (...args) {
     args.forEach(function (item) {
-        console.log(item)
+        console.log(item);
     })
 }
