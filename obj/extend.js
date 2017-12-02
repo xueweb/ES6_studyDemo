@@ -21,7 +21,7 @@ var shallowCopy = function (obj) {
     }
     return newObj;
 }
-var testArr=[1,2,3,{a:'aa'}]
+var testArr=[1,2,3,{a:'aa'}];
 var o=shallowCopy(testArr);
 testArr[2]=22222;
 console.log(o);

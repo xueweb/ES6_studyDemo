@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+<p>json</p>
+</body>
+<script>
+    var obj={
+        a:'aa',
+        b:'bb',
+        c:'cc'
+    }
+    var objJsonStr=JSON.stringify(obj);
+    console.log(objJsonStr)
+    var jsonStr ='{"a":"aa","b":"bb","c":"cc"}';
+    console.log(JSON.parse(jsonStr))
+</script>
+</html>
