@@ -64,6 +64,6 @@ Array.prototype.forEach = function (callback, thisArg) {
 };
 
 var a = [1, 2, 3]
-[1, 2, 3].forEach((val, i) => {
+a.forEach((val, i) => {
     console.log(val, i)
 })
