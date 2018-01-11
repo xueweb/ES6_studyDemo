@@ -5,6 +5,9 @@ let obj = {
     d: {
         a: 'da',
         b: 'db'
+    },
+    d:{
+        d:'d'
     }
 }
 let jsonStrObj = JSON.stringify(obj);
