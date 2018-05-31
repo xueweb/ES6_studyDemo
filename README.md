@@ -1,3 +1,1 @@
 > es6语法以及一些常见的代码
-
-#### demo来自于《ECMAScript 6入门-阮一峰》and so on...
